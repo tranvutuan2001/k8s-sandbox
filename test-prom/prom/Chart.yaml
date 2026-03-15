@@ -1,0 +1,11 @@
+apiVersion: v2
+name: prom
+description: Deploys kube-prometheus-stack for cluster monitoring
+type: application
+version: 0.1.0
+appVersion: "v0.78.1"
+
+dependencies:
+  - name: kube-prometheus-stack
+    version: "68.4.4"
+    repository: https://prometheus-community.github.io/helm-charts

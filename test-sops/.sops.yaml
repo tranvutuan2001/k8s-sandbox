@@ -1,0 +1,7 @@
+# SOPS configuration file.
+# The 'pgp' fingerprint below is a PLACEHOLDER.
+# Replace REPLACE_WITH_YOUR_GPG_FINGERPRINT with the 40-character fingerprint
+# printed by: gpg --list-secret-keys --keyid-format LONG
+creation_rules:
+  - path_regex: cac\.yaml$
+    pgp: "3A4AE2446755466C29C10A83AEBCA1B5B48AE909"

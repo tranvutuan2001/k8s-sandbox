@@ -1,0 +1,14 @@
+# Default values for nginx-chart.
+# The actual secret value is injected at deploy time from the encrypted
+# secrets.yaml file via helm-secrets and never lives here in plain text.
+
+replicaCount: 1
+
+image:
+  repository: nginx
+  tag: "1.25.0"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
